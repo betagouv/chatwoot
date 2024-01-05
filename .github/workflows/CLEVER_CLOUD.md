@@ -39,7 +39,7 @@ Adjust the domain names as you want, and configure the environment variables as 
 * `CC_NODE_VERSION`: `20` _(needed since Clever Cloud does not retrieve the Node version from `package.json` due to being in a Rails application)_
 * `CC_POST_BUILD_HOOK`: `RAILS_ENV=production rails assets:precompile`
 * `CC_PRE_BUILD_HOOK`: `yarn install`
-* `CC_PRE_RUN_HOOK`: `rake db:chatwoot_prepare`
+* `CC_PRE_RUN_HOOK`: `bundle exec rake db:chatwoot_prepare`
 * `CC_RACKUP_SERVER`: `puma`
 * `DATABASE_URL`: [GENERATED] _(provided by the interface, but you must add as query parameter `sslmode=prefer`)_
 * `DEFAULT_LOCALE`: `fr`
