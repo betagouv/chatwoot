@@ -36,6 +36,7 @@ Now set for both apps these options:
 
 Adjust the domain names as you want, and configure the environment variables as follow:
 * `ACTIVE_STORAGE_SERVICE`: `s3_compatible`
+* `CC_NODE_VERSION`: `20` _(needed since Clever Cloud does not retrieve the Node version from `package.json` due to being in a Rails application)_
 * `CC_POST_BUILD_HOOK`: `RAILS_ENV=production rails assets:precompile`
 * `CC_PRE_BUILD_HOOK`: `yarn install`
 * `CC_PRE_RUN_HOOK`: `rake db:chatwoot_prepare`
