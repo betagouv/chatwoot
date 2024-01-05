@@ -62,7 +62,7 @@ Adjust the domain names as you want, and configure the environment variables as 
 * `STORAGE_ACCESS_KEY_ID`: [GENERATED]
 * `STORAGE_BUCKET_NAME`: [TO_DEFINE] _(refering to the bucket you created, knowing most of the time this is a unique value across your S3 provider)_
 * `STORAGE_ENDPOINT`: [GENERATED]
-* `STORAGE_REGION`: [GENERATED]
+* `STORAGE_REGION`: `us-west-1` _(S3 region does not exist at Clever Cloud so we use a fake one for librairies to not complain)_
 * `STORAGE_SECRET_ACCESS_KEY`: [GENERATED]
 
 ### GitHub interface
