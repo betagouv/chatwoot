@@ -45,7 +45,7 @@ Adjust the domain names as you want, and configure the environment variables as 
 * `DEFAULT_LOCALE`: `fr`
 * `ENABLE_ACCOUNT_SIGNUP`: `false`
 * `FORCE_SSL`: `true`
-* `FRONTEND_URL`: `https://${YOUR_DOMAIN}`
+* `FRONTEND_URL`: `https://${YOUR_DOMAIN}` _(must be without the ending slash since Chatwoot adds one and redirections would break)_
 * `MAILER_INBOUND_EMAIL_DOMAIN`: `${YOUR_EMAIL_DOMAIN}`
 * `MAILER_SENDER_EMAIL`: `Chatwoot beta.gouv <chatwoot@${YOUR_EMAIL_DOMAIN}>`
 * `PORT`: `8080`
